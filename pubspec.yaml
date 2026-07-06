@@ -1,0 +1,40 @@
+name: lane_app
+description: Локальный музыкальный плеер
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+
+  # Аудио
+  just_audio: ^0.9.36
+  audio_service: ^0.18.12
+
+  # Сканирование медиатеки устройства (треки/альбомы/исполнители)
+  on_audio_query: ^2.9.0
+
+  # Состояние приложения
+  provider: ^6.1.1
+
+  # Локальное хранилище (избранное, история поиска)
+  shared_preferences: ^2.2.2
+
+  # Плейлисты — локальная БД
+  sqflite: ^2.3.0
+  path: ^1.8.3
+
+  # Разрешения на доступ к медиафайлам
+  permission_handler: ^11.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.1
+
+flutter:
+  uses-material-design: true
